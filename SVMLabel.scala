@@ -423,7 +423,7 @@ object SVMO extends Serializable {
         
         var alph = BDM.zeros[Double](config.value.train_num,1)
         for(k <- 0 until config.value.train_num){
-          alph(k,0) = alpha.value(i,0)
+          alph(k,0) = alpha.value(k,0)
         }
         
         alph(i,0) = a_b._1
